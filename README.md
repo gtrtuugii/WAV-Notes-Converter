@@ -69,5 +69,3 @@ top_notes = find_top_notes(fft, num=5, xf=xf)
 
 
 Feel free to contribute to this project by opening issues or pull requests.
-
-```
