@@ -151,7 +151,7 @@ def process_audio(input_file):
     mx = 0
 
     # Create a list to store note information for all frames
-    all_notes_info = []
+    audio_samples = []
     detected_notes = []
 
     for frame_number in range(FRAME_COUNT):
@@ -162,6 +162,8 @@ def process_audio(input_file):
 
     for frame_number in range(FRAME_COUNT):
         sample = extract_sample(audio_data, frame_number, FRAME_OFFSET, FFT_WINDOW_SIZE)
+        # Append the audio sample to the list
+        audio_samples.extend(sample)
 
         fft = np.fft.rfft(sample * window)
         fft = np.abs(fft).real
@@ -182,14 +184,14 @@ def process_audio(input_file):
             print(f"Note: {note}, Flatness/Sharpness (cents): {cents_difference:.2f}")
 
     # Visualize the top notes
+    visualize_waveform(audio_samples, fs)
     visualize_note(detected_notes)
     
 
-# if __name__ == "__main__":
-#     parser = argparse.ArgumentParser(description="Analyze audio and find top musical notes.")
-#     parser.add_argument("input_file", type=str, help="Input WAV file")
-#     args = parser.parse_args()
-#     process_audio(args.input_file)
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Analyze audio and find top musical notes.")
+    parser.add_argument("input_file", type=str, help="Input WAV file")
+    args = parser.parse_args()
+    process_audio(args.input_file)
 
 
-process_audio("ttls.wav")
