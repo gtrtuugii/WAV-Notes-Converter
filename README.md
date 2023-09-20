@@ -52,8 +52,6 @@ You can configure the script by modifying the following parameters in `main.py`:
 top_notes = find_top_notes(fft, num=5, xf=xf)
 ```
 
-- Other parameters related to audio processing.
-
 ## Example
 
 ![example output matplotlib](https://github.com/gtrtuugii/WAV-Notes-Converter/blob/main/output/Figure_1.png?raw=true)
