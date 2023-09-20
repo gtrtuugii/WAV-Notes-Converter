@@ -50,8 +50,8 @@ You can configure the script by modifying the following parameters in `main.py`:
 
 ## Example
 
- ![example output matplotlib](https://github.com/gtrtuugii/WAV-Notes-Converter/blob/main/output/Figure_1.png?raw=true)
-
+![example output matplotlib](https://github.com/gtrtuugii/WAV-Notes-Converter/blob/main/output/Figure_1.png?raw=true)
+![example output matplotlib](https://github.com/gtrtuugii/WAV-Notes-Converter/blob/main/output/Figure_1b.png?raw=true)
 ## Acknowledgments
 
 - [numpy](https://numpy.org/) - Numerical computing library for Python.
