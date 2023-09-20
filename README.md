@@ -1,4 +1,4 @@
-```markdown
+
 # Audio Analysis and Visualization
 
 This project is a Python script for analyzing audio files and visualizing the top musical notes detected in the audio. It utilizes the Fast Fourier Transform (FFT) to convert audio from the time domain to the frequency domain and identifies prominent musical notes based on their amplitudes.
@@ -49,7 +49,7 @@ You can configure the script by modifying the following parameters in `main.py`:
 - Other parameters related to audio processing.
 
 ## Example
-
+ ![https://github.com/gtrtuugii/WAV-Notes-Converter/blob/main/output/Figure_1.png]
 
 ## Acknowledgments
 
