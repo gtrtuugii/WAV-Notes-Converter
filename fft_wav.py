@@ -183,9 +183,10 @@ def process_audio(input_file):
             cents_difference = 1200 * np.log2(frequency / 440.0)
             print(f"Note: {note}, Flatness/Sharpness (cents): {cents_difference:.2f}")
 
-    # Visualize the top notes
-    visualize_waveform(audio_samples, fs)
+    # Visualize the top notes and waveform
     visualize_note(detected_notes)
+    visualize_waveform(audio_samples, fs)
+    
     
 
 if __name__ == "__main__":
