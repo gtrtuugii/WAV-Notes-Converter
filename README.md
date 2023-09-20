@@ -45,13 +45,21 @@ You can configure the script by modifying the following parameters in `main.py`:
 
 - `FPS`: Frames per second for audio analysis.
 - `FFT_WINDOW_SECONDS`: Window size in seconds for FFT analysis.
-- `NUM_TOP_NOTES`: Number of top notes to detect.
+- To determine the number of top musical notes to detect during the analysis you can adjust the `num` parameter when calling the `find_top_notes` function based on your specific analysis requirements.
+
+```python
+# Example: Detect the top 5 notes
+top_notes = find_top_notes(fft, num=5, xf=xf)
+```
+
 - Other parameters related to audio processing.
 
 ## Example
 
 ![example output matplotlib](https://github.com/gtrtuugii/WAV-Notes-Converter/blob/main/output/Figure_1.png?raw=true)
+
 ![example output matplotlib](https://github.com/gtrtuugii/WAV-Notes-Converter/blob/main/output/Figure_1b.png?raw=true)
+
 ## Acknowledgments
 
 - [numpy](https://numpy.org/) - Numerical computing library for Python.
