@@ -20,7 +20,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/audio-analysis.git
+   git clone https://github.com/gtrtuugii/WAV-Notes-Converte.git
    ```
 
 2. Change into the project directory:
@@ -32,7 +32,7 @@ Before you begin, ensure you have met the following requirements:
 3. Run the script with your audio file:
 
    ```bash
-   python fft_wav.py your_audio_file.wav
+   python3 fft_wav.py your_audio_file.wav
    ```
 
    Replace `your_audio_file.wav` with the path to your audio file.
