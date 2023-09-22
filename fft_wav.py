@@ -118,7 +118,7 @@ def visualize_waveform(samples, sample_rate):
     plt.show()
 
 def visualize_note(notes_data):
-    # Extract frequencies and notes from the input data
+    # Extract frequencies and notes from the notes_data
     frequencies = [note_info[0] for note_info in notes_data]
     notes = [note_info[1] for note_info in notes_data]
 
@@ -204,7 +204,6 @@ def process_audio(input_file):
     visualize_waveform(audio_samples, fs)
     
     
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Analyze audio and find top musical notes.")
     parser.add_argument("input_file", type=str, help="Input WAV file")
